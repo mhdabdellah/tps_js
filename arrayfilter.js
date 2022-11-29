@@ -18,14 +18,14 @@ console.log(`result2 ${result2}`);
 // words.filter(word => word.length > 6).then((data)=>{console.log("data"+data)});
 
 // using callback
+const callbackwords = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 function displayOnlyThen (word){ 
     word.length > 6
-    showData(list)
 }
 function showData(list){
     console.log("list"+list);
 }
-words.filter(displayOnlyThen)
+let callbakresult = callbackwords.filter(displayOnlyThen).then(showData);
 // words.filter(displayOnlyThen).then(showData);
 
 
